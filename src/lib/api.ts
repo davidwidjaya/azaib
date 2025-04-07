@@ -5,7 +5,7 @@ interface ApiErrorDetail {
     message: string;
 }
 
-interface ApiResponse<T = any> {
+interface ApiResponse<T = unknown> {
     code: number;
     status: number;
     message: string;
@@ -53,16 +53,16 @@ const fetchApi = {
     ): Promise<ApiResponse<T>> => {
         return apiClient.get(url, config);
     },
-    post: async <T>(
+    post: async <T, D = unknown>(
         url: string,
-        data: any,
+        data: D,
         config?: AxiosRequestConfig,
     ): Promise<ApiResponse<T>> => {
         return apiClient.post(url, data, config);
     },
-    put: async <T>(
+    put: async <T, D = unknown>(
         url: string,
-        data: any,
+        data: D,
         config?: AxiosRequestConfig,
     ): Promise<ApiResponse<T>> => {
         return apiClient.put(url, data, config);

@@ -1,5 +1,4 @@
 'use client'
-import { RootState } from "@/src/stores/store";
 import Image from "next/image";
 
 export default function SignIn() {

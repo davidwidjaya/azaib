@@ -1,7 +1,3 @@
-// import Counter from "./_components/Counter";
-// import ResetButton from "./_components/ResetButton";
-// import Result from "./_components/Result";
-
 import Counter from "../components/ui/Counter/Counter";
 import ResetButton from "../components/ui/Counter/Reset";
 import Result from "../components/ui/Counter/Result";
