@@ -1,0 +1,16 @@
+@import 'main.scss';
+
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.#{$prefix}-login-page {
+  &__info-wrapper {
+    background-image: linear-gradient(#6eb8f6, #3a83f9);
+    padding-top: 116px;
+    padding-left: 86px;
+    padding-right: 86px;
+    padding-bottom: 236px;
+  }
+}
